@@ -2460,26 +2460,26 @@ function exploreCombatPlayer() {
 
         //abilities
         const below50hp = pkmn[team[exploreActiveMember].pkmn.id]?.playerHp < (pkmn[team[exploreActiveMember].pkmn.id]?.playerHpMax * 0.5);
-        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.overgrow.id && move[nextMoveWild].type == 'grass' ) totalPower *= 1.3
-        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.blaze.id && move[nextMoveWild].type == 'fire' ) totalPower *= 1.3
-        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.swarm.id && move[nextMoveWild].type == 'bug' ) totalPower *= 1.3
-        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.torrent.id && move[nextMoveWild].type == 'water' ) totalPower *= 1.3
-        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.bastion.id && move[nextMoveWild].type == 'steel' ) totalPower *= 1.3
-        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.average.id && move[nextMoveWild].type == 'normal' ) totalPower *= 1.3
-        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.resolve.id && move[nextMoveWild].type == 'fighting' ) totalPower *= 1.3
-        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.mistify.id && move[nextMoveWild].type == 'psychic' ) totalPower *= 1.3
-        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.hexerei.id && move[nextMoveWild].type == 'ghost' ) totalPower *= 1.3
-        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.glimmer.id && move[nextMoveWild].type == 'fairy' ) totalPower *= 1.3
-        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.skyward.id && move[nextMoveWild].type == 'flying' ) totalPower *= 1.3
-        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.draconic.id && move[nextMoveWild].type == 'dragon' ) totalPower *= 1.3
-        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.noxious.id && move[nextMoveWild].type == 'poison' ) totalPower *= 1.3
-        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.solid.id && move[nextMoveWild].type == 'rock' ) totalPower *= 1.3
-        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.rime.id && move[nextMoveWild].type == 'ice' ) totalPower *= 1.3
-        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.voltage.id && move[nextMoveWild].type == 'electric' ) totalPower *= 1.3
+        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.overgrow.id && move[nextMovePlayer].type == 'grass' ) totalPower *= 1.3
+        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.blaze.id && move[nextMovePlayer].type == 'fire' ) totalPower *= 1.3
+        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.swarm.id && move[nextMovePlayer].type == 'bug' ) totalPower *= 1.3
+        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.torrent.id && move[nextMovePlayer].type == 'water' ) totalPower *= 1.3
+        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.bastion.id && move[nextMovePlayer].type == 'steel' ) totalPower *= 1.3
+        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.average.id && move[nextMovePlayer].type == 'normal' ) totalPower *= 1.3
+        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.resolve.id && move[nextMovePlayer].type == 'fighting' ) totalPower *= 1.3
+        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.mistify.id && move[nextMovePlayer].type == 'psychic' ) totalPower *= 1.3
+        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.hexerei.id && move[nextMovePlayer].type == 'ghost' ) totalPower *= 1.3
+        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.glimmer.id && move[nextMovePlayer].type == 'fairy' ) totalPower *= 1.3
+        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.skyward.id && move[nextMovePlayer].type == 'flying' ) totalPower *= 1.3
+        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.draconic.id && move[nextMovePlayer].type == 'dragon' ) totalPower *= 1.3
+        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.noxious.id && move[nextMovePlayer].type == 'poison' ) totalPower *= 1.3
+        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.solid.id && move[nextMovePlayer].type == 'rock' ) totalPower *= 1.3
+        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.rime.id && move[nextMovePlayer].type == 'ice' ) totalPower *= 1.3
+        if (below50hp && pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.voltage.id && move[nextMovePlayer].type == 'electric' ) totalPower *= 1.3
 
-        if (pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.ironFist.id && /dynamicPunch|dizzyPunch|firePunch|thunderPunch|bulletPunch|icePunch|powerupPunch|hammerArm|shadowPunch/.test(nextMoveWild) ) totalPower *= 1.3
-        if (pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.strongJaw.id && /fireFang|thunderFang|poisonFang|iceFang|bugBite|bite|crunch/.test(nextMoveWild) ) totalPower *= 1.3
-        if (pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.toughClaws.id && /furyCutter|shadowClaw|metalClaw|dragonClaw|nightSlash/.test(nextMoveWild) ) totalPower *= 1.3
+        if (pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.ironFist.id && /dynamicPunch|dizzyPunch|firePunch|thunderPunch|bulletPunch|icePunch|powerupPunch|hammerArm|shadowPunch/.test(nextMovePlayer) ) totalPower *= 1.3
+        if (pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.strongJaw.id && /fireFang|thunderFang|poisonFang|iceFang|bugBite|bite|crunch/.test(nextMovePlayer) ) totalPower *= 1.3
+        if (pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.toughClaws.id && /furyCutter|shadowClaw|metalClaw|dragonClaw|nightSlash/.test(nextMovePlayer) ) totalPower *= 1.3
 
         if ( pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.rivalry.id && pkmn[saved.currentPkmn].type.some(t => pkmn[team[exploreActiveMember].pkmn.id].type.includes(t)) ) totalPower *= 1.3
         
@@ -2509,16 +2509,6 @@ function exploreCombatPlayer() {
             
 
 
-          /*      if (pkmn[ team[exploreActiveMember].pkmn.id ]?.ability != ability.sheerForce.id) {
-
-
-        if (move[nextMoveWild].hitEffect && typeEffectiveness(move[nextMoveWild].type, pkmn[team[exploreActiveMember].pkmn.id].type)!= 0) {
-            move[nextMoveWild].hitEffect("player")
-        }
-
-        }
-
-        if (pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.sheerForce.id && move[nextMoveWild].hitEffect)*/
 
 
         if (pkmn[ team[exploreActiveMember].pkmn.id ]?.ability != ability.sheerForce.id || (pkmn[ team[exploreActiveMember].pkmn.id ]?.ability == ability.sheerForce.id && totalPower==0  )){
