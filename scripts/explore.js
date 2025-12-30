@@ -964,7 +964,7 @@ if (areas[saved.currentArea].encounter && areas[saved.currentArea].difficulty ==
     updateTeamExp()
 
 
-    if (areas[saved.currentArea].trainer) currentTrainerSlot++
+    if (areas[saved.currentArea]?.trainer) currentTrainerSlot++
 
 
 
@@ -6428,6 +6428,7 @@ window.addEventListener('load', function() {
 
     //updateTeamExp()
 });
+
 
 
 
