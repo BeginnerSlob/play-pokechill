@@ -1057,8 +1057,7 @@ function openTooltip(){
 }
 
 document.getElementById("tooltipBackground").addEventListener("click", (e) => {
-  if (document.getElementById("prevent-tooltip-exit")) return
-  closeTooltip()
+          if (!document.getElementById("prevent-tooltip-exit")) closeTooltip()
 });
 
 
@@ -2027,8 +2026,10 @@ function returnStatDots(id, stat){
 
 function returnIVDots(id, stat){
 
-    const val = pkmn[id].ivs[stat];
+    const val = Math.min(pkmn[id].ivs[stat],6);
     const max = 6;
+
+    
 
     const filled = Array(val).fill("★ ").join(" ");
     const empty  = Array(max - val).fill("·").join(" ");
@@ -6045,7 +6046,7 @@ if (mod==="end"){
     
     document.getElementById("tooltipTitle").innerHTML = `Operation overview`
     document.getElementById("tooltipTop").style.display = "none"    
-    document.getElementById("tooltipMid").innerHTML = `<div class="genetics-overview-tags">${summaryTags}</div>`
+    document.getElementById("tooltipMid").innerHTML = `<div class="genetics-overview-tags" id="prevent-tooltip-exit">${summaryTags}</div>`
     document.getElementById("tooltipBottom").innerHTML = `<div style="display:flex;justify-content:center;align-items:center; width:100%; cursor:help"><div class="area-preview" data-pkmn-editor="${saved.geneticHost}"><img   class="sprite-trim" src="img/pkmn/sprite/${saved.geneticHost}.png"> </div></div>`
 
 

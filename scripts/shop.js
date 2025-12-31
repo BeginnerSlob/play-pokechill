@@ -549,7 +549,7 @@ div.addEventListener("click", () => {
             document.getElementById("tooltipTop").style.display = "none"    
             document.getElementById("tooltipTop").style.display = "none"    
             document.getElementById("tooltipMid").style.display = "none"
-            document.getElementById("tooltipBottom").innerHTML = "You dont have enough Bottle Caps to purchase this"
+            document.getElementById("tooltipBottom").innerHTML = `You dont have enough Bottle Caps to purchase this<span id="prevent-tooltip-exit"></span>`
         }
     }
 
