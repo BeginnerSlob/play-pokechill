@@ -6077,8 +6077,12 @@ const wildBuffs = {
   satkdown2: 0,
   defup1: 0,
   defup2: 0,
+  defdown1: 0,
+  defdown2: 0,
   sdefup1: 0,
   sdefup2: 0,
+  sdefdown1: 0,
+  sdefdown2: 0,
   speup1: 0,
   speup2: 0,
   spedown1: 0,
@@ -7357,4 +7361,5 @@ window.addEventListener('load', function() {
 
     //updateTeamExp()
 });
+
 
