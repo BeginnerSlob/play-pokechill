@@ -7484,6 +7484,9 @@ window.addEventListener('load', function() {
     loadGame();
     getSeed()
 
+    //this safefail prevents loading into unexistiing areas
+    if (!areas[saved.currentArea]) saved.currentArea = undefined
+
     if (saved.currentArea !== undefined) {
         document.getElementById("team-preview").innerHTML = ""
         document.getElementById("content-explore").style.display = "flex"
@@ -7526,4 +7529,3 @@ window.addEventListener('load', function() {
 
     //updateTeamExp()
 });
-

@@ -15581,7 +15581,7 @@ pkmn.quaxly = {
     spe: 50,
   },
   evolve: function() { return { 1: { pkmn: pkmn.quaxwell, level: evolutionLevel1 } } },
-    affectedBy: [ability.dancer.id],
+    hiddenAbility: ability.dancer,
     signature : move.aquaStep
 }
 
@@ -15596,7 +15596,7 @@ pkmn.quaxwell = {
     spe: 65,
   },
   evolve: function() { return { 1: { pkmn: pkmn.quaquaval, level: evolutionLevel2 } } },
-    affectedBy: [ability.dancer.id],
+    hiddenAbility: ability.dancer,
     signature : move.aquaStep
 }
 
@@ -15610,7 +15610,7 @@ pkmn.quaquaval = {
     sdef: 75,
     spe: 85,
   },
-    affectedBy: [ability.dancer.id],
+    hiddenAbility: ability.dancer,
     signature : move.aquaStep
 }
 
@@ -16721,5 +16721,4 @@ ribbon.smile ={
     name: `Smile Ribbon`,
     description: `Awarded very rarely for spending a lot of time together`
 }
-
 

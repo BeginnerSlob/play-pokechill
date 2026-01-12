@@ -295,6 +295,7 @@ function injectPreviewTeam(){
 
 function setPkmnTeamHp(){
 
+
     saved.currentSpiralFloor = 1
 
 
@@ -303,7 +304,7 @@ function setPkmnTeamHp(){
     if (team[i].pkmn === undefined) continue
 
     let hpMultiplier = 10
-    if (areas[saved.currentArea].trainer || saved.currentArea == areas.frontierSpiralingTower.id) hpMultiplier = 4
+    if (areas[saved.currentArea]?.trainer || saved.currentArea == areas.frontierSpiralingTower.id) hpMultiplier = 4
     if (saved.currentArea == areas.training.id) hpMultiplier = 80 //100
 
 
@@ -375,6 +376,7 @@ function switchMemberNext() { //used for stuff like u turn
 
 
 function switchMember(member){
+
 
     if (areas[saved.currentArea].id == "training") return
 
@@ -553,8 +555,6 @@ function setPkmnTeam(){
 
 
 }
-
-
 
 
 
