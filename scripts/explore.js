@@ -2824,12 +2824,12 @@ function exploreCombatPlayer() {
 
 
 
-        if (testAbility(`active`, ability.ironFist.id) && move.affectedBy?.includes(ability.ironFist.id) ) movePower *= 1.5
-        if (testAbility(`active`, ability.strongJaw.id) && move.affectedBy?.includes(ability.strongJaw.id) ) movePower *= 2
-        if (testAbility(`active`, ability.toughClaws.id) && move.affectedBy?.includes(ability.toughClaws.id) ) movePower *= 2
-        if (testAbility(`active`, ability.sharpness.id) && move.affectedBy?.includes(ability.sharpness.id) ) movePower *= 1.5
-        if (testAbility(`active`, ability.megaLauncher.id) && move.affectedBy?.includes(ability.megaLauncher.id) ) movePower *= 1.5
-        if (testAbility(`active`, ability.metalhead.id) && move.affectedBy?.includes(ability.metalhead.id) ) movePower *= 1.5
+        if (testAbility(`active`, ability.ironFist.id) && nextMove.affectedBy?.includes(ability.ironFist.id) ) movePower *= 1.5
+        if (testAbility(`active`, ability.strongJaw.id) && nextMove.affectedBy?.includes(ability.strongJaw.id) ) movePower *= 2
+        if (testAbility(`active`, ability.toughClaws.id) && nextMove.affectedBy?.includes(ability.toughClaws.id) ) movePower *= 2
+        if (testAbility(`active`, ability.sharpness.id) && nextMove.affectedBy?.includes(ability.sharpness.id) ) movePower *= 1.5
+        if (testAbility(`active`, ability.megaLauncher.id) && nextMove.affectedBy?.includes(ability.megaLauncher.id) ) movePower *= 1.5
+        if (testAbility(`active`, ability.metalhead.id) && nextMove.affectedBy?.includes(ability.metalhead.id) ) movePower *= 1.5
         
         
 
@@ -7601,5 +7601,6 @@ window.addEventListener('load', function() {
 
     //updateTeamExp()
 });
+
 
 
