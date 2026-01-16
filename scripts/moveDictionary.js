@@ -2420,7 +2420,7 @@ move.voltSwitch = {
     type: "electric",
     power: 70,
     info: function() {return `Switches to the next party member`},
-    hitEffect: function(target) { if (target=="wild" || saved.currentArea != "training") switchMemberNext() },
+    hitEffect: function(target) { if (target=="wild" && saved.currentArea != "training") switchMemberNext() },
 }
 
 
@@ -3171,7 +3171,7 @@ move.uTurn = {
     type: "bug",
     power: 70,
     info: function() {return `Switches to the next party member`},
-    hitEffect: function(target) { if (target=="wild") switchMemberNext() },
+    hitEffect: function(target) { if (target=="wild" && saved.currentArea != "training") switchMemberNext() },
 }
 
 
@@ -4297,5 +4297,6 @@ for (const i in move){
     move[i].id = i
     if (move[i].timer == undefined) move[i].timer = defaultPlayerMoveTimer
 }
+
 
 
