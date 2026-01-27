@@ -776,20 +776,16 @@ shop.alolanDiglett = {
     price: 30,
     currency: `gold`,
     category: `pokemon`,
+    effect: function() {givePkmn(pkmn.alolanDiglett,1)}
 }
 
-shop.alolanDiglett = {
-    pkmn: pkmn.alolanDiglett.id,
-    price: 30,
-    currency: `gold`,
-    category: `pokemon`,
-}
 
 shop.galarianZigzagoon = {
     pkmn: pkmn.galarianZigzagoon.id,
     price: 30,
     currency: `gold`,
     category: `pokemon`,
+    effect: function() {givePkmn(pkmn.galarianZigzagoon,1)}
 }
 
 shop.galarianPonyta = {
@@ -797,6 +793,7 @@ shop.galarianPonyta = {
     price: 30,
     currency: `gold`,
     category: `pokemon`,
+    effect: function() {givePkmn(pkmn.galarianPonyta,1)}
 }
 
 shop.alolanSandshrew = {
@@ -804,6 +801,7 @@ shop.alolanSandshrew = {
     price: 50,
     currency: `gold`,
     category: `pokemon`,
+    effect: function() {givePkmn(pkmn.alolanSandshrew,1)}
 }
 
 shop.hisuianVoltorb = {
@@ -811,6 +809,7 @@ shop.hisuianVoltorb = {
     price: 50,
     currency: `gold`,
     category: `pokemon`,
+    effect: function() {givePkmn(pkmn.hisuianVoltorb,1)}
 }
 
 shop.paldeanWooper = {
@@ -818,6 +817,7 @@ shop.paldeanWooper = {
     price: 50,
     currency: `gold`,
     category: `pokemon`,
+    effect: function() {givePkmn(pkmn.paldeanWooper,1)}
 }
 
 shop.hisuianQwilfish = {
@@ -825,6 +825,7 @@ shop.hisuianQwilfish = {
     price: 50,
     currency: `gold`,
     category: `pokemon`,
+    effect: function() {givePkmn(pkmn.hisuianQwilfish,1)}
 }
 
 shop.alolanRaichu = {
@@ -832,6 +833,7 @@ shop.alolanRaichu = {
     price: 100,
     currency: `gold`,
     category: `pokemon`,
+    effect: function() {givePkmn(pkmn.alolanRaichu,1)}
 }
 
 shop.hisuianBraviary = {
@@ -839,6 +841,7 @@ shop.hisuianBraviary = {
     price: 100,
     currency: `gold`,
     category: `pokemon`,
+    effect: function() {givePkmn(pkmn.hisuianBraviary,1)}
 }
 
 shop.hisuianSamurott = {
@@ -846,6 +849,7 @@ shop.hisuianSamurott = {
     price: 100,
     currency: `gold`,
     category: `pokemon`,
+    effect: function() {givePkmn(pkmn.hisuianSamurott,1)}
 }
 
 shop.hisuianLilligant = {
@@ -853,6 +857,7 @@ shop.hisuianLilligant = {
     price: 100,
     currency: `gold`,
     category: `pokemon`,
+    effect: function() {givePkmn(pkmn.hisuianLilligant,1)}
 }
 
 shop.gimmighoul = {
@@ -860,6 +865,7 @@ shop.gimmighoul = {
     price: 999,
     currency: `gold`,
     category: `pokemon`,
+    effect: function() {givePkmn(pkmn.gimmighoul,1)}
 }
 
 let shopCategory = undefined
