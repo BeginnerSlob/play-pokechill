@@ -276,7 +276,7 @@ function changeTheme(){
   if (theme === "spooky"){
     document.documentElement.style.setProperty('--dark1', '#292825');
     document.documentElement.style.setProperty('--dark2', '#332f2b');
-    document.documentElement.style.setProperty('--light1', '#e78b56');
+    document.documentElement.style.setProperty('--light1', '#b46c42');
     document.documentElement.style.setProperty('--light2', '#d3c49d');
 
 
