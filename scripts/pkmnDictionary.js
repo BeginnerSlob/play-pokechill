@@ -12211,7 +12211,6 @@ pkmn.stunfisk = {
     spe: 32,
   },
     hiddenAbility: ability.simple,
-    hiddenAbility: ability.terralate,
 }
 
 pkmn.galarianStunfisk = {

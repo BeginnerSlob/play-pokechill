@@ -5512,6 +5512,12 @@ function updateItemBag(){
     document.getElementById("item-menu-cancel").style.display = "none"
     document.getElementById("item-menu-remove").style.display = "none"
 
+
+    if (dexTeamSelect!==undefined) {
+        document.getElementById("item-menu-cancel").style.display = "inline"
+        document.getElementById("item-menu-remove").style.display = "inline"
+    }
+
     for (const i in item) {
 
         if (!item[i].type?.includes(bagCategory) && ( bagCategory!="evo" || !item[i].evo )) continue
@@ -5651,9 +5657,8 @@ function updateItemBag(){
         document.getElementById("item-menu-cancel").style.display = "inline"
         document.getElementById("item-menu-remove").style.display = "inline"
         document.getElementById("pokedex-filters-remove").style.display = "flex"
-        bagCategory = 'held'
 
-        if (item[i].type !== "held") continue
+        if (item[i].type !== "held" && item[i].heldBonusPower===undefined ) continue
         //prevents equipping duplicated items
         if (saved.previewTeams[saved.currentPreviewTeam].slot1.item == i) continue
         if (saved.previewTeams[saved.currentPreviewTeam].slot2.item == i) continue
