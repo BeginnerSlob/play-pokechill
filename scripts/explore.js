@@ -3442,6 +3442,7 @@ function exploreCombatWild() {
         let dotDamage = 5
         if (areas[saved.currentArea]?.trainer || saved.currentArea == areas.frontierSpiralingTower.id || saved.currentArea == areas.training.id) dotDamage = 12
         if (areas[saved.currentArea]?.encounter) dotDamage = 100
+        if (areas[saved.currentArea]?.difficulty >= tier4difficulty) dotDamage = 150
 
 
 
