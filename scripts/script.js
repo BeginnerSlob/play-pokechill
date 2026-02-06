@@ -881,7 +881,7 @@ function updateSettings(alt){
   document.getElementById("settings-theme").value = saved.theme
 
   if (saved.hideGotPkmn) {document.getElementById("settings-hide-got").value = "true"} else document.getElementById("settings-hide-got").value = "false"
-  if (saved.alternateWildRotation) {document.getElementById("settings-alternate-rotation").value = "true"} else document.getElementById("settings-alternate-rotation").value = "false"
+  if (saved.alternateWildRotation == "true") {document.getElementById("settings-alternate-rotation").value = "true"} else document.getElementById("settings-alternate-rotation").value = "false"
 
 
   if (document.getElementById("tooltip-modifiers-list")) {
