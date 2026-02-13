@@ -2823,6 +2823,8 @@ function exploreCombatPlayer() {
 
         if (team[exploreActiveMember].item == item.leftovers.id) fatigueDamage /= item.leftovers.power();
 
+        if (testAbility(`active`, ability.stamina.id)) fatigueDamage /= 2;
+
         if (  saved.gamemodAfk == true) fatigueDamage /= 3
 
 

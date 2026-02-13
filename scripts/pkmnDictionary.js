@@ -401,7 +401,7 @@ pkmn.megaBeedrill = {
         spe: 160,
     },
     hiddenAbility: ability.adaptability,
-    eggMove : move.meFirst
+    eggMove : move.toxicThread
 }
 
 // 016 Pidgey → Pidgeotto → Pidgeot
