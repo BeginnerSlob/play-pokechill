@@ -8325,7 +8325,7 @@ function returnHMS(seconds) {
 
 
 
-function getEvolutionFamily(base) {
+function getEvolutionFamily(base, obtainableCheck = false) {
     const family = new Set();
     const stack = [base];
     
@@ -8336,6 +8336,8 @@ function getEvolutionFamily(base) {
             if (typeof pokemon.evolve === "function") {
                 const evoObj = pokemon.evolve();
                 for (const slot in evoObj) {
+                    if (obtainableCheck && evoObj[slot].item?.cannotObtain)
+                        continue;
                     if (evoObj[slot].pkmn === target) {
                         preEvos.push(pokemon);
                     }
@@ -8351,7 +8353,7 @@ function getEvolutionFamily(base) {
         family.add(current);
         
         // search evos (forward)
-        if (typeof current.evolve === "function") {
+        if (!obtainableCheck && typeof current.evolve === "function") {
             const evoObj = current.evolve();
             for (const key in evoObj) {
                 if (evoObj[key].pkmn) {
