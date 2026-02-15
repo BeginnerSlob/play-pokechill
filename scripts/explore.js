@@ -4861,7 +4861,7 @@ function updatePokedex(){
         let missingLevelEvolution = false;
         if (pkmn[i].evolve !== undefined) {
         for (const evo in pkmn[i]?.evolve()) {
-        if ( pkmn[i].evolve()[evo].pkmn.caught==0 ) missingEvolution = true
+        if ( pkmn[i].evolve()[evo].item?.cannotObtain ) continue;
         if ( pkmn[i].evolve()[evo].pkmn.caught==0 ) {
             missingEvolution = true
             // Check for uncaught level-based evolutions
