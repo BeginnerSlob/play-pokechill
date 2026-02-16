@@ -2641,6 +2641,7 @@ move.savageStinger = {  //new
 move.quiverDance = {
     moveset: [`bug`],
     split: "special",
+    rarity: 3,
     type: "bug",
     power: 0,
     timer: defaultPlayerMoveTimer*1.4,
